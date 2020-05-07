@@ -5,9 +5,142 @@
 "0","options(warn = -1) # suppress warings globally"
 "0",""
 "0","library(tidyverse)"
+"2","[30m-- [1mAttaching packages[22m --------------------------------------- tidyverse 1.2.1 --[39m
+"
+"2","[30m[32m¡Ì[30m [34mggplot2[30m 3.3.0     [32m¡Ì[30m [34mpurrr  [30m 0.3.3
+[32m¡Ì[30m [34mtibble [30m 2.1.3     [32m¡Ì[30m [34mdplyr  [30m 0.8.3
+[32m¡Ì[30m [34mtidyr  [30m 1.0.2     [32m¡Ì[30m [34mstringr[30m 1.4.0
+[32m¡Ì[30m [34mreadr  [30m 1.3.1     [32m¡Ì[30m [34mforcats[30m 0.4.0[39m
+"
+"2","[30m-- [1mConflicts[22m ------------------------------------------ tidyverse_conflicts() --
+[31mx[30m [34mdplyr[30m::[32mfilter()[30m masks [34mstats[30m::filter()
+[31mx[30m [34mdplyr[30m::[32mlag()[30m    masks [34mstats[30m::lag()[39m
+"
 "0","library(glmnet)"
+"2","ÔØÈëÐèÒªµÄ³Ì¼­°ü£ºMatrix
+"
+"2","
+ÔØÈë³Ì¼­°ü£º¡®Matrix¡¯
+
+"
+"2","The following objects are masked from ¡®package:tidyr¡¯:
+
+    expand, pack, unpack
+
+"
+"2","Loaded glmnet 3.0-1
+
+"
 "0","library(PRIMsrc)"
+"2","ÔØÈëÐèÒªµÄ³Ì¼­°ü£ºsurvival
+"
+"2","ÔØÈëÐèÒªµÄ³Ì¼­°ü£ºsuperpc
+"
+"2","ÔØÈëÐèÒªµÄ³Ì¼­°ü£ºHmisc
+"
+"2","ÔØÈëÐèÒªµÄ³Ì¼­°ü£ºlattice
+"
+"2","ÔØÈëÐèÒªµÄ³Ì¼­°ü£ºFormula
+"
+"2","
+ÔØÈë³Ì¼­°ü£º¡®Hmisc¡¯
+
+"
+"2","The following objects are masked from ¡®package:dplyr¡¯:
+
+    src, summarize
+
+"
+"2","The following objects are masked from ¡®package:base¡¯:
+
+    format.pval, units
+
+"
+"2","ÔØÈëÐèÒªµÄ³Ì¼­°ü£ºquantreg
+"
+"2","ÔØÈëÐèÒªµÄ³Ì¼­°ü£ºSparseM
+"
+"2","
+ÔØÈë³Ì¼­°ü£º¡®SparseM¡¯
+
+"
+"2","The following object is masked from ¡®package:base¡¯:
+
+    backsolve
+
+"
+"2","
+ÔØÈë³Ì¼­°ü£º¡®quantreg¡¯
+
+"
+"2","The following object is masked from ¡®package:Hmisc¡¯:
+
+    latex
+
+"
+"2","The following object is masked from ¡®package:survival¡¯:
+
+    untangle.specials
+
+"
+"2","PRIMsrc 0.8.2 and > 0.7.0 are major releases with significant user-visible changes.
+"
+"2","Type PRIMsrc.news() to see new features, changes, and bug fixes.
+"
+"2","
+ÔØÈë³Ì¼­°ü£º¡®PRIMsrc¡¯
+
+"
+"2","The following objects are masked from ¡®package:Matrix¡¯:
+
+    print, summary
+
+"
 "0","library(hrbrthemes)"
+"2","Registering Windows fonts with R
+"
+"2","NOTE: Either Arial Narrow or Roboto Condensed fonts are required to use these themes.
+"
+"2","      Please use hrbrthemes::import_roboto_condensed() to install Roboto Condensed and
+"
+"2","      if Arial Narrow is not on your system, please see https://bit.ly/arialnarrow
+"
 "0","library(Amelia) ## for missmap"
+"2","ÔØÈëÐèÒªµÄ³Ì¼­°ü£ºRcpp
+"
+"2","## 
+## Amelia II: Multiple Imputation
+## (Version 1.7.6, built: 2019-11-24)
+## Copyright (C) 2005-2020 James Honaker, Gary King and Matthew Blackwell
+## Refer to http://gking.harvard.edu/amelia/ for more information
+## 
+"
 "0","library(viridis)"
+"2","ÔØÈëÐèÒªµÄ³Ì¼­°ü£ºviridisLite
+"
 "0","library(plotly)"
+"2","
+ÔØÈë³Ì¼­°ü£º¡®plotly¡¯
+
+"
+"2","The following object is masked from ¡®package:Hmisc¡¯:
+
+    subplot
+
+"
+"2","The following object is masked from ¡®package:ggplot2¡¯:
+
+    last_plot
+
+"
+"2","The following object is masked from ¡®package:stats¡¯:
+
+    filter
+
+"
+"2","The following object is masked from ¡®package:graphics¡¯:
+
+    layout
+
+"
+"0","library(Ckmeans.1d.dp)"

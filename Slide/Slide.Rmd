@@ -1,0 +1,16 @@
+---
+title: "Integrative single-cell clustering analysis"
+author: "Wu"
+output:
+  slidy_presentation: default
+  ioslides_presentation:
+    transition: faster
+    widescreen: no
+  beamer_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.width=6, fig.height=4, fig.align = "center", warning=FALSE, message=FALSE)
+```
+
+
