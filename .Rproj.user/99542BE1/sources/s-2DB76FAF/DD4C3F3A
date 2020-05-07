@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588772475954.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DD4C3F3A",
+    "lastKnownWriteTime" : 1588775940,
+    "last_content_update" : 1588775940986,
+    "path" : "C:/Users/chencanyi/OneDrive/subgroup_AAS/Proposal/proposal.Rmd",
+    "project_path" : "Proposal/proposal.Rmd",
+    "properties" : {
+        "cursorPosition" : "133,57",
+        "scrollLine" : "109",
+        "source_window_id" : "wqtf1vngvy5xl"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

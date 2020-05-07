@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1588772837621.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2A1D8680",
+    "lastKnownWriteTime" : 1588772832,
+    "last_content_update" : 1588772832,
+    "path" : "C:/Users/chencanyi/OneDrive/subgroup_AAS/example/Report_SA.Rmd",
+    "project_path" : "example/Report_SA.Rmd",
+    "properties" : {
+        "cursorPosition" : "109,34",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
