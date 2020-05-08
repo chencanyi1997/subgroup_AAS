@@ -72,8 +72,11 @@ analysis in this report. The necessary R packages are
   - Ckmeans.1d.dp, version 4.3.2
     (<https://cran.r-project.org/web/packages/Ckmeans.1d.dp/index.html>)
   - PRIMsrc, version 0.8.2
-    (<https://cran.r-project.org/web/packages/PRIMsrc/index.html>) \#\#
-    Instructions for Use \#\#\# Reproducibility
+    (<https://cran.r-project.org/web/packages/PRIMsrc/index.html>)
+
+## Instructions for Use
+
+### Reproducibility
 
 All data preprocessing and simulations are reproduced. The workflow
 information is contained in the Reproduce\_Subgroup.R script. The
