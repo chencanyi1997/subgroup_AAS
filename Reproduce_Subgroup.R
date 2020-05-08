@@ -22,6 +22,7 @@ library(tidyverse)
 library(glmnet)
 library(Amelia) # for missmap
 library(Ckmeans.1d.dp)
+library(PRIMsrc)
 sourceDir <- "./Code"
 source(paste(sourceDir,"computeBIC.R",sep = "/"))
 
@@ -88,7 +89,7 @@ df %>% ggplot(aes(x = k, y = bic)) +
 	geom_point() +
 	scale_x_continuous(breaks = karr[1:10]) +
 	theme_classic()
-kk <- 2
+kk <- df[which.min(df$bic),1]
 
 # ------------------------------------------------------------
 # Step5: Apply kmeans to the ajusted $\widetilde{Y_i}$

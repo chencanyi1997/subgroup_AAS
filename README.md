@@ -83,3 +83,8 @@ general steps are:
 2.  Conduct data processing/preparation for the analyses.
 3.  Fit the two-stage subgroup analysis to the preprocessed data.
 4.  Generate all plots in the report.
+
+## R Shiny
+
+We deploy our simulations with R Shiny in
+<https://chency1997.shinyapps.io/shiny/>.

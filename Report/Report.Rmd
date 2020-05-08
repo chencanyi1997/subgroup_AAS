@@ -199,3 +199,7 @@ t.test(res1$ires,res2$ires)
 ```
 
 T test and boxplot shows that the subgroup makes sense. External data also verifies our results, where 59 patients experienced a relapse \citep{Lee2015IdentifyingAA}.
+
+## R Shiny
+
+We deploy our simulations with R Shiny in https://chency1997.shinyapps.io/shiny/.
