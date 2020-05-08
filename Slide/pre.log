@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.21)  8 MAY 2020 02:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.21)  8 MAY 2020 08:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -954,22 +954,22 @@ n/10.95 + \OT1/mathkerncmss/m/sl/10.95 s\OT1/cmss/m/n/10.95 )\OML/cmm/m/it/10.9
 ] [13
 
 ]
-<fig/ChenCV.png, id=640, 830.10126pt x 494.84875pt>
+<fig/ChenCV.png, id=655, 830.10126pt x 494.84875pt>
 File: fig/ChenCV.png Graphic file (type png)
 <use fig/ChenCV.png>
 Package pdftex.def Info: fig/ChenCV.png  used on input line 158.
 (pdftex.def)             Requested size: 153.64493pt x 91.59088pt.
-<fig/ChenOnemode.png, id=642, 782.925pt x 481.8pt>
+<fig/ChenOnemode.png, id=657, 782.925pt x 481.8pt>
 File: fig/ChenOnemode.png Graphic file (type png)
 <use fig/ChenOnemode.png>
 Package pdftex.def Info: fig/ChenOnemode.png  used on input line 158.
 (pdftex.def)             Requested size: 153.64493pt x 94.54977pt.
-<fig/ChenTwomode.png, id=643, 779.91376pt x 477.785pt>
+<fig/ChenTwomode.png, id=658, 779.91376pt x 477.785pt>
 File: fig/ChenTwomode.png Graphic file (type png)
 <use fig/ChenTwomode.png>
 Package pdftex.def Info: fig/ChenTwomode.png  used on input line 158.
 (pdftex.def)             Requested size: 153.64493pt x 94.1191pt.
-<fig/ChenBox.png, id=644, 778.91pt x 487.8225pt>
+<fig/ChenBox.png, id=659, 778.91pt x 487.8225pt>
 File: fig/ChenBox.png Graphic file (type png)
 <use fig/ChenBox.png>
 Package pdftex.def Info: fig/ChenBox.png  used on input line 158.
@@ -978,14 +978,16 @@ Package pdftex.def Info: fig/ChenBox.png  used on input line 158.
 
  <./fig/ChenCV.png> <./fig/ChenOnemode.png> <./fig/ChenTwomode.png> <./fig/Chen
 Box.png>]
-<fig/ChenBic.png, id=691, 798.985pt x 488.82625pt>
+<fig/ChenBic.png, id=707, 798.985pt x 488.82625pt>
 File: fig/ChenBic.png Graphic file (type png)
 <use fig/ChenBic.png>
 Package pdftex.def Info: fig/ChenBic.png  used on input line 164.
 (pdftex.def)             Requested size: 307.28987pt x 188.00102pt.
  [15
 
- <./fig/ChenBic.png>]
+ <./fig/ChenBic.png>] [16
+
+]
 \tf@nav=\write6
 \openout6 = `pre.nav'.
 
@@ -995,19 +997,19 @@ Package pdftex.def Info: fig/ChenBic.png  used on input line 164.
 \tf@snm=\write8
 \openout8 = `pre.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
  (./pre.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 166.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 172.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
 Package rerunfilecheck Info: File `pre.out' has not changed.
 (rerunfilecheck)             Checksum: B3F061724FCDC9C5BF2C5A69F45C159E;183.
  ) 
 Here is how much of TeX's memory you used:
- 18381 strings out of 492623
- 346865 string characters out of 6133290
- 429622 words of memory out of 5000000
- 21809 multiletter control sequences out of 15000+600000
+ 18385 strings out of 492623
+ 346900 string characters out of 6133290
+ 430623 words of memory out of 5000000
+ 21811 multiletter control sequences out of 15000+600000
  30234 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,20n,63p,770b,768s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1027,10 +1029,10 @@ onts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2019/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb>
-Output written on pre.pdf (15 pages, 273311 bytes).
+Output written on pre.pdf (16 pages, 275465 bytes).
 PDF statistics:
- 798 PDF objects out of 1000 (max. 8388607)
- 715 compressed objects within 8 object streams
- 36 named destinations out of 1000 (max. 500000)
+ 860 PDF objects out of 1000 (max. 8388607)
+ 775 compressed objects within 8 object streams
+ 38 named destinations out of 1000 (max. 500000)
  148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -28,6 +28,8 @@ Correct indentification of subgroups of a heterogeneous population is an importa
 
 Biological heterogeneity is common in many diseases; heterogeneity complicates clinical management, as it is often the main reason for prognostic and therapeutic failures. Thus there have been many attempts to identify subgroups from a heterogenous population. One of the most popular methods for finding subgroups from a heterogenous population is the mixture model (see, e.g. XXX). The mixture model-based approach often needs to specify the underlying distribution for data and the number of subgroups, which is impractical. Moreover, this method is not suitable for the high dimensional setting where the number of covariates $p$ is much larger than the sample size $n$. 
 
+
+# Model
 In this project, we consider the following model:
 
 $$
@@ -53,8 +55,10 @@ Instead we first use Lasso procedure to select related covariates from $\x_i$, t
 \end{equation}
 Based on this, we can adjust the common effect existing in $\x_i$. Specifically, let $\widehat{\lambda}$ be the value of the tuning parameter selected based on a data-driven procedure such as Bayesian information criterion (BIC). For brevity, write $\widehat{\bbeta} = \widehat{\bbeta}(\widehat{\lambda})$. Then let $\widetilde{Y_i} = Y_i - \x_i^T\widehat{\bbeta}$. We apply the k-means algorithm to the adjusted $\widetilde{Y_i}$.
 
+## The choice of concave penalty function
 For the choice of penalty function, we can simply use the   $\ell_1$-norm penalty  \citep[LASSO]{tibshirani1996regression}, smoothly clipped absolute deviations penalty   \citep[SCAD]{fan2001variable}  or minimax concave penalty  \citep[MCP]{zhang2010nearly}.   Interested readers may refer to \cite{hastie2015statistical} and references therein for comprehensive reviews on recent developments. In the present context we adopt  $\ell_1$-norm penalty   $p(\bbeta,\lambda) = \lambda|\bbeta|_1$ for simplicity.
 
+## Optimization methods
 The first order methods, such as  \cite{combettes2011proximal}, \cite{bach2012optimization} and \cite{tropp2010computational}, and Newton type algorithms, such as \cite{fountoulakis2014matrix} and \cite{dassios2015preconditioner}, can be used to optimize \@ref(eq:lasso).  We suggest to use  the primal dual active set method \citep{fan2014primal}, which is in spirit a generalized version of Newton type method. It usually converges  after one-step iteration if there is a very good initial value. We globalize it with continuation on regularization parameter and take a maximum vote regularization parameter selection rule   incorporated along with the continuation procedure without extra computation overhead \citep[see][]{huang2018robust}.
 
 It remains to analysis the subgroups in $\tY = (\widetilde{Y_1},\ldots,\widetilde{Y_n})^T$. This is an unsupervised cluster problem. Many loss function can be adopted to find the cluster modes, e.g., k-means, k-median, k-modes, even the deep learing algorithm. The k-means problem is to partition data into k groups such that the sum of squared Euclidean distances to each group mean is minimized. However, the problem is NP-hard in a general Euclidean space, even when the number of clusters k is 2 \citep{Aloise2009NPhardnessOE}. The standard iterative k-means algorithm \citep{Llyod1982LeastSQ} is a widely used heuristic solution. The algorithm iteratively calculates the within-cluster sum of squared distances, modifies group membership of each point to reduce the within-cluster sum of squared distances, and computes new cluster centers until local convergence is achieved. The time complexity of this standard k-means algorithm is $O(qknp)$, where $q$ is the number of iterations, k is the number of clusters. In our context, we take k-means for its simplicity. There exists dynamic programming algorithm for optimal one-dimensional clustering \citep[see][]{Wang2011Ckmeans1ddpOK}. They implement this algorithm as an R package called Ckmeans.1d.dp. This exact dynamic programming solution with a runtime of $O(n^2k)$ to the 1-D k-means problem.
@@ -78,16 +82,6 @@ Publicly available lung cancer genomic data from the Chemores Cohort Study. This
 
 ## Data description
 
-```{r,include=F}
-computeBIC <- function(X, y, muh, betah, c = 10) {
-  
-  s <- sum(abs(betah)>0)
-  n <- dim(X)[1]
-  p <- dim(X)[2]
-  Qn <- sum((y-muh-X%*%betah)^2)/n
-  df <- k+p;
-  bic <- log(Qn) + c*log(log(n+p))*log(n)/n*df;
-}
 ```
 
 
@@ -98,13 +92,10 @@ knitr::opts_chunk$set(
 )
 options(warn = -1) # suppress warings globally
 
+library(PRIMsrc)
 library(tidyverse)
 library(glmnet)
-library(PRIMsrc)
-library(hrbrthemes)
-library(Amelia) ## for missmap
-library(viridis)
-library(plotly)
+library(Amelia) # for missmap
 library(Ckmeans.1d.dp)
 ```
 
@@ -128,6 +119,8 @@ missmap(Real.2)
 There are no missing data.
 
 
+## Results
+
 ```{r}
 x <- Real.2[,-c(1)] %>% apply(2, as.numeric)
 y <- Real.2$y
@@ -144,6 +137,38 @@ ggplot(res, aes(x = ires, y = ..density..)) +
   theme_classic()
 ```
 We can find two modes in the density plot. Thus, we apply kmeans to the residual.
+
+```{r}
+computeBIC <- function(X, y, muh, betah, k, c = 10) {
+  
+  s <- sum(abs(betah)>0)
+  n <- dim(X)[1]
+  p <- dim(X)[2]
+  Qn <- sum((y-muh-X%*%betah)^2)/n
+  df <- k+p;
+  bic <- log(Qn) + c*log(log(n+p))*log(n)/n*df;
+  return(bic)
+}
+n <- dim(x)[1]
+p <- dim(x)[2]
+kL <- 1
+kU <- n-1
+karr <- seq(kL,kU)
+bicarr <- -1*rep(1,length(karr))
+for ( i in 1:length(karr)) {
+ k <- karr[i]
+r <- Ckmeans.1d.dp(res[[1]],k)
+muh <- r$centers[r$cluster]
+bicarr[i] <- computeBIC(x,y,muh,beta,i)
+}
+df <- data.frame(k = karr[1:10],
+                 bic = bicarr[1:10])
+df %>% ggplot(aes(x = k, y = bic))+
+  geom_point() +
+  scale_x_continuous(breaks= karr[1:10]) +
+  theme_classic()
+```
+
 
 ```{r}
 cl <- kmeans(res,2)
@@ -173,37 +198,4 @@ At this time, the distribution within each subgoup is more homogeneous.
 t.test(res1$ires,res2$ires)
 ```
 
-T test is significant.
-
-```{r}
-computeBIC <- function(X, y, muh, betah, k, c = 10) {
-  
-  s <- sum(abs(betah)>0)
-  n <- dim(X)[1]
-  p <- dim(X)[2]
-  Qn <- sum((y-muh-X%*%betah)^2)/n
-  df <- k+p;
-  bic <- log(Qn) + c*log(log(n+p))*log(n)/n*df;
-  return(bic)
-}
-n <- dim(x)[1]
-p <- dim(x)[2]
-kL <- 1
-kU <- n-1
-karr <- seq(kL,kU)
-bicarr <- -1*rep(1,length(karr))
-for ( i in 1:length(karr)) {
- k <- karr[i]
-r <- Ckmeans.1d.dp(res[[1]],k)
-muh <- r$centers[r$cluster]
-bicarr[i] <- computeBIC(x,y,muh,beta,i)
-}
-plot(bicarr[1:10])
-df <- data.frame(k = karr[1:10],
-                 bic = bicarr[1:10])
-df %>% ggplot(aes(x = k, y = bic))+
-  geom_point() +
-  scale_x_continuous(breaks= karr[1:10]) +
-  theme_classic()
-```
-
+T test and boxplot shows that the subgroup makes sense. External data also verifies our results, where 59 patients experienced a relapse \citep{Lee2015IdentifyingAA}.
