@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.21)  9 MAY 2020 02:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.21)  20 MAY 2020 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -832,11 +832,11 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 599.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 599.
  ) 
 Here is how much of TeX's memory you used:
- 14472 strings out of 492623
- 210432 string characters out of 6133290
+ 14474 strings out of 492623
+ 210450 string characters out of 6133290
  334893 words of memory out of 5000000
  17977 multiletter control sequences out of 15000+600000
- 82813 words of font info for 131 fonts, out of 8000000 for 9000
+ 82896 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,6n,38p,1418b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2019/te
@@ -860,7 +860,7 @@ exmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2019/texmf-dist/fonts/ty
 pe1/public/lm/lmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt
 i10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Report.pdf (13 pages, 710244 bytes).
+Output written on Report.pdf (13 pages, 710224 bytes).
 PDF statistics:
  352 PDF objects out of 1000 (max. 8388607)
  299 compressed objects within 3 object streams

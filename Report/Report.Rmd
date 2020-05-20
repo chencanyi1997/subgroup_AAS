@@ -20,13 +20,14 @@ bibliography: refs.bib
 \newcommand{\bmu}{\bm{\mu}}
 \newcommand{\mR}{\mathbb{R}}
 \newcommand{\tY}{\widetilde{\Y}}
+
 # Abstract
 
 Correct indentification of subgroups of a heterogeneous population is an important step in developing precision medicine. In this report, we develop a two-stage data-driven efficient method to detect the subgroups existing in the lung cancer population under the $p>>n$ situation. We assume the heterogeneity mainly comes from the unobserved latent factors. After adjusting for the effects of a subset of the covariates $\x_i = (X_{i1},\ldots,X_{ip})$ using the Lasso procudure, we apply the k-means algorithm to divide the heterogenous population into subgroups using dynamic programming based the elbow rule with the modified BIC criterion. Finally we verify the proposed method by applying our method to the publicly available lung cancer genomic data.
 
 # Introduction
 
-Biological heterogeneity is common in many diseases; heterogeneity complicates clinical management, as it is often the main reason for prognostic and therapeutic failures. Thus there have been many attempts to identify subgroups from a heterogenous population. One of the most popular methods for finding subgroups from a heterogenous population is the mixture model (see, e.g. XXX). The mixture model-based approach often needs to specify the underlying distribution for data and the number of subgroups, which is impractical. Moreover, this method is not suitable for the high dimensional setting where the number of covariates $p$ is much larger than the sample size $n$. 
+Biological heterogeneity is common in many diseases; heterogeneity complicates clinical management, as it is often the main reason for prognostic and therapeutic failures. Thus there have been many attempts to identify subgroups from a heterogenous population. One of the most popular methods for finding subgroups from a heterogenous population is the mixture model. The mixture model-based approach often needs to specify the underlying distribution for data and the number of subgroups, which is impractical. Moreover, this method is not suitable for the high dimensional setting where the number of covariates $p$ is much larger than the sample size $n$. 
 
 
 # Model
@@ -35,7 +36,7 @@ In this project, we consider the following model:
 $$
 Y_{i} = \mu_{i} + \x_{i}^T\bbeta + \epsilon_{i}, i = 1,\cdots,n,
 $$
-where $Y_i$ is the response for the $i$-th subject, $\mu_i$'s are unknown subject-specific intercepts, $\bbeta = (\beta_1,\ldots,\beta_p)^T$ is the coefficients vector for the covariates $\x_i$ and $\epsilon_i$ is the error term independent of $\x_i$ with $\E(\epsilon_i) = 0$ and $\Var(\epsilon_i) = \sigma^2$. In a biomedical study, e.g., the lung cancer genomic data (XXX), $Y_i$ could be a certain phenotype associated or suvival time with some disease such as "Disease-Free Survival Time", $\x_i$ could be a set of clinical variables such as gender, age, race, and the expression levels of Agilent miRNA probes. When considering the expression levels of miRNA, the sample size $n$ is usually smaller than the dimension of covariates $p$. Thus the sparsity principle applied naturally to address the high dimension issue $p>n$ where only a subset $\calS$ of $\bbeta$ is nonzero. We assume $|\calS|=s$. 
+where $Y_i$ is the response for the $i$-th subject, $\mu_i$'s are unknown subject-specific intercepts, $\bbeta = (\beta_1,\ldots,\beta_p)^T$ is the coefficients vector for the covariates $\x_i$ and $\epsilon_i$ is the error term independent of $\x_i$ with $\E(\epsilon_i) = 0$ and $\Var(\epsilon_i) = \sigma^2$. In a biomedical study, e.g., the lung cancer genomic data, $Y_i$ could be a certain phenotype associated or suvival time with some disease such as "Disease-Free Survival Time", $\x_i$ could be a set of clinical variables such as gender, age, race, and the expression levels of Agilent miRNA probes. When considering the expression levels of miRNA, the sample size $n$ is usually smaller than the dimension of covariates $p$. Thus the sparsity principle applied naturally to address the high dimension issue $p>n$ where only a subset $\calS$ of $\bbeta$ is nonzero. We assume $|\calS|=s$. 
 
 In the situation $p<n$, \cite{Ma2015ACP} considered optimizing the following objective fucntion
 $$
