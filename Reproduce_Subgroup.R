@@ -25,6 +25,7 @@ library(Ckmeans.1d.dp)
 library(PRIMsrc)
 sourceDir <- "./Code"
 source(paste(sourceDir,"computeBIC.R",sep = "/"))
+set.seed(1)
 
 # ------------------------------------------------------------
 # Step 1: Exploratory Data Analysis
