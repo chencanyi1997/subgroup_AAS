@@ -83,7 +83,6 @@ Publicly available lung cancer genomic data from the Chemores Cohort Study. This
 
 ## Data description
 
-```
 
 
 ```{r setup}

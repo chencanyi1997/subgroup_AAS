@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.21)  20 MAY 2020 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.21)  22 MAY 2020 21:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -752,32 +752,32 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                 on input line 161.
 
 [2]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 210.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 211.
 
 (c:/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [3]
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 222
+)
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 212.
+[3]
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 261
 .
 (c:/texlive/2019/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [4]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 328.
-[5] [6]
+) [4] [5] [6]
 <Report_files/figure-latex/unnamed-chunk-2-1.pdf, id=142, 469.755pt x 325.215pt
 >
 File: Report_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 <use Report_files/figure-latex/unnamed-chunk-2-1.pdf>
 Package pdftex.def Info: Report_files/figure-latex/unnamed-chunk-2-1.pdf  used 
-on input line 466.
+on input line 464.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 <Report_files/figure-latex/unnamed-chunk-3-1.pdf, id=143, 469.755pt x 325.215pt
 >
 File: Report_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 <use Report_files/figure-latex/unnamed-chunk-3-1.pdf>
 Package pdftex.def Info: Report_files/figure-latex/unnamed-chunk-3-1.pdf  used 
-on input line 482.
+on input line 480.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [7 <./Report_files/figure-latex/unnamed-chunk-2-1.pdf>]
 <Report_files/figure-latex/unnamed-chunk-3-2.pdf, id=156, 469.755pt x 325.215pt
@@ -785,15 +785,15 @@ on input line 482.
 File: Report_files/figure-latex/unnamed-chunk-3-2.pdf Graphic file (type pdf)
 <use Report_files/figure-latex/unnamed-chunk-3-2.pdf>
 Package pdftex.def Info: Report_files/figure-latex/unnamed-chunk-3-2.pdf  used 
-on input line 499.
+on input line 497.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--501
+Underfull \hbox (badness 10000) in paragraph at lines 497--499
 [][]
  []
 
 [8 <./Report_files/figure-latex/unnamed-chunk-3-1.pdf>]
-Underfull \vbox (badness 10000) detected at line 533
+Underfull \vbox (badness 10000) detected at line 531
  []
 
 [9 <./Report_files/figure-latex/unnamed-chunk-3-2.pdf>]
@@ -802,14 +802,14 @@ Underfull \vbox (badness 10000) detected at line 533
 File: Report_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 <use Report_files/figure-latex/unnamed-chunk-4-1.pdf>
 Package pdftex.def Info: Report_files/figure-latex/unnamed-chunk-4-1.pdf  used 
-on input line 535.
+on input line 533.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 <Report_files/figure-latex/unnamed-chunk-5-1.pdf, id=178, 469.755pt x 325.215pt
 >
 File: Report_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 <use Report_files/figure-latex/unnamed-chunk-5-1.pdf>
 Package pdftex.def Info: Report_files/figure-latex/unnamed-chunk-5-1.pdf  used 
-on input line 557.
+on input line 555.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [10 <./Report_files/figure-latex/unnamed-chunk-4-1.pdf>]
 <Report_files/figure-latex/unnamed-chunk-5-2.pdf, id=188, 469.755pt x 325.215pt
@@ -817,19 +817,19 @@ on input line 557.
 File: Report_files/figure-latex/unnamed-chunk-5-2.pdf Graphic file (type pdf)
 <use Report_files/figure-latex/unnamed-chunk-5-2.pdf>
 Package pdftex.def Info: Report_files/figure-latex/unnamed-chunk-5-2.pdf  used 
-on input line 569.
+on input line 567.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [11 <./Report_files/figure-latex/unnamed-chunk-5-1.pdf>] (./Report.bbl
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 18.
 (c:/texlive/2019/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [12 <./Report_files/figure-latex/unnamed-chunk-5-2.pdf>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 599.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 597.
 [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 599.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 597.
 (./Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 599.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 599.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 597.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 597.
  ) 
 Here is how much of TeX's memory you used:
  14474 strings out of 492623
@@ -838,7 +838,7 @@ Here is how much of TeX's memory you used:
  17977 multiletter control sequences out of 15000+600000
  82896 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,6n,38p,1418b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,6n,38p,1418b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2019/te
 xmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvi
 ps/lm/lm-mathit.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c
@@ -860,7 +860,7 @@ exmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2019/texmf-dist/fonts/ty
 pe1/public/lm/lmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt
 i10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Report.pdf (13 pages, 710224 bytes).
+Output written on Report.pdf (13 pages, 709620 bytes).
 PDF statistics:
  352 PDF objects out of 1000 (max. 8388607)
  299 compressed objects within 3 object streams
